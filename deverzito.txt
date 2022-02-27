@@ -1,0 +1,64 @@
+Deverzito do meu bebe
+
+Sua tarefa vai ser representar o mundo do zatch bell, o mundo MAMODO! 
+
+Para isso vai ser preciso representar um Mamodo e um Guardiao.
+
+Para representar um mamodo, vai ser preciso uma classe que conta com:
+    - Protected:
+    - Nome - string
+    - Caracteristicas - string
+    - Força - int(1 a 100)
+    - Vida - int(1 a 100)
+    - mamodosEncontrados - static int
+
+    - Funcoes:
+    - gets and sets
+    - Atacar1 - void
+    - Atacar2 - void
+    - Defender - void
+    - Construtor com e sem parametros
+    - Cons..
+Sempre que um mamodo for criado, deve ser atualizado o mamodosEncontrados++.
+Por padrao, sempre que um mamodo é criado ele tem o atributo vida = 100
+
+Para representar um Guardiao(quem carrega o livro do mamodo), vai ser preciso uma classe que conta com:
+    - Protected:
+    - Nome - string
+    - Idade - int
+    - Inteligencia - int
+    - Mamodos - vector com um ou mais mamodos(os mestres aqui podem ter mais de um)
+
+    - Funcoes:
+    - gets and sets
+    - LerAtaque1 - void
+    - LerAtaque2 - void
+    - LerDefesa - void
+    - Construtor com parametros
+    - Construtor sem parametros
+
+Existe um mamodo muito poderoso chamado Zeno, que em seu nascimento tinha todas as caracteristicas e atributos *iguais aos do Zatch Bell,
+mas depois teve seu poder aumentado.
+
+Um mamodo pode sofrer uma mutação muito doida, onde ele recebe todas os atributos de um outro mamodo. operator= 
+
+
+Exemplo operador de = 
+
+Cercle& Cercle::operator=(const Cercle& uC){ 
+        if (this != &uC) {
+            std::cout<<"sou diferente"<<std::endl;
+            this->rayon = uC.rayon;
+
+        }
+        return *this;
+}
+
+EXTRA:
+
+Os mamodos podem ter diferentes classes, mamodo eletrico, mamodo aquatico e mamodo das trevas. Todos eles herdam da classe mamodo,
+o que vai ser diferente em cada mamodo vai ser uma habilidade(funcao) de ataque a mais. 
+
+As habilidades que ja existem na classe MAMODO (Atacar1,Atacar2, LerDefesa), sao OBRIGATORIAMENTE sobreescritas pelas classes filhas.
+
+
